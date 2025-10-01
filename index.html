@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hotel</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Hotel Buen descanso</legend>
+                <table cellpadding="10" cellspacing="0">
+                    <tr>
+                        <td colspan="5"><h4>Informacion Personal</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                        </td>
+
+                        <td>
+                            <label for="apellido">Apellido:</label><br>
+                            <input type="text" id="apellido" name="apellido" required placeholder="Ingrese su apellido">
+                        </td>
+
+                        <td>
+                            <label for="telefono">Telefono:</label><br>
+                            <input type="text" id="telefono" name="telefono" required placeholder="Ingrese su telefono">
+                        </td>
+
+                        <td>
+                            <label for="idioma">Idioma:</label><br>
+                            <select id="selectIdioma" name="selectIdioma">
+                                <option value="-1">Seleccione...</option>
+                                <option value="esp">Espaniol</option>
+                                <option value="ing">Ingles</option>
+                                <option value="fran">Frances</option>
+                                <option value="itl">Italiano</option>
+                            </select>
+                        </td>
+
+                        <td>
+                            <label for="rfc">RFC:</label><br>
+                            <input type="text" id="rfc" name="rfc" required placeholder="Ingrese su RFC">
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="5"><h4>Direccion</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="calle">Calle:</label><br>
+                            <input type="text" id="calle" name="calle" required placeholder="Ingrese su calle">
+                        </td>
+
+                        <td>
+                            <label for="colonia">Colonia:</label><br>
+                            <input type="text" id="colonia" name="colonia" required placeholder="Ingrese su colonia">
+                        </td>
+
+                        <td>
+                            <label for="numExt">Numero Exterior:</label><br>
+                            <input style="width: 37px;" type="number" id="numExt" name="numExt" required placeholder="Num. Ext">
+                        </td>
+
+                        <td>
+                            <label for="cp">Codigo Postal:</label><br>
+                            <input style="width: 40px;" type="text" id="cp" name="cp" required placeholder="CP">
+                        </td>
+
+                        <td>
+                            <label for="estado">Estado:</label><br>
+                            <select id="selectEstado" name="selectEstado">
+                                <option value="-1">Seleccione...</option>
+                                <option value="mor">Morelos</option>
+                                <option value="cdmx">CDMX</option>
+                                <option value="yuc">Yucatan</option>
+                                <option value="chi">Chiapas</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="5"><h4>Informacion de la Reserva</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fechaLlegada">Fecha de llegada:</label><br>
+                            <input type="date" id="fechaLlegada" name="fechaLlegada" required>
+                        </td>
+
+                        <td>
+                            <label for="fechaSalida">Fecha de salida:</label><br>
+                            <input type="date" id="fechaSalida" name="fechaSalida" required>
+                        </td>
+
+                        <td>
+                            <label for="numPersonas">Numero de personas:</label><br>
+                            <input style="width: 37px;" type="number" id="numPersonas" name="numPersonas" required placeholder="Num. Personas">
+                        </td>
+
+                        <td colspan="2">
+                            <table cellpadding="5" cellspacing="0">
+                                <tr>
+                                    <td colspan="3"><b>Tipo de habitacion</b></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="tipo" id="simple">
+                                        <label for="simple">Simple</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="tipo" id="duplex">
+                                        <label for="duplex">Duplex</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="tipo" id="premium">
+                                        <label for="premium">Premium</label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table cellpadding="5" cellspacing="0">
+                                <tr>
+                                    <td colspan="3"><b>Tipo de cama</b></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="cama" id="matrimonial">
+                                        <label for="matrimonial">Matrimonial</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="cama" id="king">
+                                        <label for="king">King</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" name="cama" id="queen">
+                                        <label for="queen">Queen</label>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" align="center">
+                            <br>
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Borrar</button>
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+    </form>
+</body>
+</html>
